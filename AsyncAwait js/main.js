@@ -1,6 +1,6 @@
 
  const isPay =  true;
- const mark = 90;
+ const mark = 40;
 function enroll(){
    console.log("course processing..");
     const promise =  new Promise((resolve,reject)=>{
@@ -41,6 +41,16 @@ function getCertificate(){
 
 }
 
+ /* enroll()
+     .then(progress)
+     .then(getCertificate)
+     .then((value)=>{
+        console.log(value);
+     })
+     .catch((err)=>{
+       console.log(err);
+     })
+*/
 async function course(){
   try{
     await enroll();
